@@ -26,11 +26,7 @@ app.get('*', function(req, res){
 	
 	});})
 
-app.use((req, res) => {
 
-   res.status(403).send('unauthorized');
-
-});
 
 app.listen(3000,function(){
     console.log("Servidor ativo no porta 3000");
