@@ -5,6 +5,14 @@ const app = express();
 dir = __dirname + '/mirko/'
 
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use((req, res, next) => {
+  res.status(404).send('Arquivo não encontrado');
+});
+
+
+
 app.get('*', function(req, res){
 	route = req.params[0]	
 	if (route != '/'){
