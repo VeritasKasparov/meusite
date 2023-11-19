@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 
-diretorio = __dirname + '/trator/'
+diretorio = __dirname + '/mirko/'
 
 
 
